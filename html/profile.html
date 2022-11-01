@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Profile</title>
+  </head>
+  <body>
+    <section>
+      <form action="../index.html"><button class="back">Назад</button></form>
+      <form id="profile">
+        <h1>Профиль пользователя.</h1>
+        <label
+          >Имя и Фамилия
+          <input
+            class="fullName"
+            name="name"
+            type="text"
+            placeholder="Введите ваше полное имя"
+            required
+          />
+          <span style="color: red"></span>
+        </label>
+        <label
+          >Дата рождения <input class="born" name="born" type="date" required />
+        </label>
+        <div class="gender">
+          <p>Пол</p>
+          <label>
+            <input
+              class="gender"
+              type="radio"
+              name="gender"
+              value="man"
+              required
+            />мужчина
+          </label>
+          <label>
+            <input
+              class="gender"
+              type="radio"
+              name="gender"
+              value="woman"
+              required
+            />женщина
+          </label>
+        </div>
+        <label
+          >Адрес
+          <input
+            class="address"
+            name="adress"
+            type="text"
+            placeholder="Введите ваш адрес"
+            required
+          />
+          <span style="color: red"></span>
+        </label>
+        <p>Знание языков:</p>
+        <label>
+          <input
+            class="language"
+            name="language"
+            type="checkbox"
+            value="Украинский"
+            checked
+          />
+          Украинский <span style="color: red"></span>
+        </label>
+        <label>
+          <input
+            class="language"
+            name="language"
+            type="checkbox"
+            value="Английский"
+          />
+          Английский <span style="color: red"></span>
+        </label>
+        <label>
+          <input
+            class="language"
+            name="language"
+            type="checkbox"
+            value="Немецкий"
+          />
+          Немецкий
+          <span style="color: red"></span>
+        </label>
+        <label>
+          Email
+          <input
+            class="e-mail"
+            name="email"
+            type="email"
+            placeholder="Введите ваше email"
+            required
+          />
+          <span style="color: red"></span>
+        </label>
+        <label
+          >Пароль
+          <input
+            class="password passOne"
+            type="password"
+            placeholder="Введите ваш пароль"
+            required
+          />
+          <span style="color: red"></span>
+        </label>
+        <label
+          >Повторите пароль
+          <input
+            class="password passTwo"
+            type="password"
+            placeholder="Повторите ваш пароль"
+            required
+          />
+          <span style="color: red"></span>
+        </label>
+        <button>Отправить</button>
+      </form>
+    </section>
+  </body>
+  <script src="../js/profile.js"></script>
+</html>
